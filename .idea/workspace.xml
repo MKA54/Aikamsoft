@@ -8,84 +8,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83120e83-59e0-4ead-9f8d-d15ef2d4b165" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PgSQL/aikamsoft.backup" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PgSQL/requests.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Converter/CriteriasDtoToCustomersCriterias.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Converter/CustomersToCustomerStatDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Converter/CustomersToCustomersDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Converter/MyExceptionToMyExceptionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Converter/StatDateDTOToStatDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/DBWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/RequestBadCustomers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/RequestCustomerAndPurchases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/RequestCustomersByDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/RequestProductsCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/RequestSearchLastName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/RequestShoppingInterval.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DAO/RequestWorkingDaysCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DTO/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DTO/CustomerStatDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DTO/MyExceptionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DTO/ResultCriteriaDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DTO/SearchResults.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/DTO/StatResultsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/Criterias.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/DesiredBadCustomers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/DesiredCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/MyException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/ProductNameAndCount.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/Purchases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/StatisticsDates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/TargetValueProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Model/WriteException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Service/Search.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/Service/Stat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/lib/jackson-annotations-2.14.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/lib/jackson-core-2.14.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Aikamsoft/lib/jackson-databind-2.14.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inputSearch.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/inputStat.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Aikamsoft/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/Aikamsoft-1.0-SNAPSHOT-jar-with-dependencies.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Converter/CriteriasDtoToCustomersCriterias.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Converter/CustomersToCustomerStatDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Converter/CustomersToCustomersDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Converter/MyExceptionToMyExceptionDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Converter/StatDateDTOToStatDate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/DBWorker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/RequestBadCustomers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/RequestCustomerAndPurchases.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/RequestCustomersByDate.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/RequestProductsCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/RequestSearchLastName.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/RequestShoppingInterval.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DAO/RequestWorkingDaysCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DTO/CustomerDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DTO/CustomerStatDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DTO/MyExceptionDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DTO/ResultCriteriaDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DTO/SearchResults.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/DTO/StatResultsDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/Criterias.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/DesiredBadCustomers.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/DesiredCustomer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/MyException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/ProductNameAndCount.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/Purchases.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/StatisticsDates.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/TargetValueProduct.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Model/WriteException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Service/Search.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/Aikamsoft/Service/Stat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Aikamsoft/AppTest.class" afterDir="false" />
+    <list default="true" id="83120e83-59e0-4ead-9f8d-d15ef2d4b165" name="Changes" comment="test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,8 +87,16 @@
       <workItem from="1669126995845" duration="1194000" />
       <workItem from="1669130029324" duration="180000" />
       <workItem from="1669130244634" duration="1072000" />
-      <workItem from="1669131573843" duration="300000" />
+      <workItem from="1669131573843" duration="911000" />
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1669131908349</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669131908350</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,5 +124,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

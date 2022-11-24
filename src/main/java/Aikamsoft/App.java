@@ -11,7 +11,7 @@ import java.io.IOException;
 
 public class App {
     public static void main(String[] args) throws IOException {
-        String defaultPath = "D:\\IdeaProjects\\Aikamsoft\\src\\main\\java\\error.json";
+        String defaultPath = "D:\\Aikamsoft\\src\\main\\java\\error.json";
         ObjectMapper objectMapper = new ObjectMapper();
         WriteException writeException = new WriteException();
 

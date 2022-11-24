@@ -23,11 +23,12 @@ public class Stat {
     private final String defaultPath;
     private double totalExpenses = 0;
     private boolean isSuccessfully = true;
+    private final StatDateDTOToStatDate statDateDTOToStatDate;
 
     public Stat(String path, String defaultPath, ObjectMapper objectMapper) throws IOException {
         this.objectMapper = objectMapper;
         this.defaultPath = defaultPath;
-        StatDateDTOToStatDate statDateDTOToStatDate = new StatDateDTOToStatDate(path, defaultPath, objectMapper);
+        this.statDateDTOToStatDate = new StatDateDTOToStatDate(path, defaultPath, objectMapper);
 
         if (statDateDTOToStatDate.isException()) {
             isSuccessfully = false;
@@ -64,7 +65,12 @@ public class Stat {
         customersAndPurchases = new ArrayList<>();
 
         for (Long idCustomer : idCustomers) {
-            RequestCustomerAndPurchases requestCustomerAndPurchases = new RequestCustomerAndPurchases(idCustomer, defaultPath, objectMapper);
+            RequestCustomerAndPurchases requestCustomerAndPurchases = new RequestCustomerAndPurchases(
+                    statDateDTOToStatDate.getStatisticsDates().getStartDate(),
+                    statDateDTOToStatDate.getStatisticsDates().getEndDate(),
+                    idCustomer,
+                    defaultPath,
+                    objectMapper);
 
             customersAndPurchases.add(requestCustomerAndPurchases.getCustomersAndPurchases());
             totalExpenses += requestCustomerAndPurchases.getCustomersAndPurchases().getTotalExpenses();

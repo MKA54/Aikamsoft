@@ -12,9 +12,13 @@ import java.util.ArrayList;
 public class RequestCustomerAndPurchases {
     private final DBWorker worker;
     private final Long id;
+    private final String startDate;
+    private final String endDate;
 
-    public RequestCustomerAndPurchases(Long id, String defaultPath, ObjectMapper objectMapper) throws IOException {
+    public RequestCustomerAndPurchases(String startDate, String endDate, Long id, String defaultPath, ObjectMapper objectMapper) throws IOException {
         this.worker = new DBWorker(defaultPath, objectMapper);
+        this.startDate = startDate;
+        this.endDate = endDate;
         this.id = id;
     }
 
@@ -68,10 +72,10 @@ public class RequestCustomerAndPurchases {
                 "ON purchases.buyers_id = buyers.id\n" +
                 "INNER JOIN products\n" +
                 "ON purchases.products_id = products.id\n" +
-                "WHERE purchase_date BETWEEN date '2022-11-01' AND date '2022-11-28'\n" +
-                "\tAND purchase_date = (SELECT holiday\n" +
-                "\t\tFROM weekend_calendar\n" +
-                "\t\tWHERE purchases.purchase_date = weekend_calendar.holiday) AND buyers.id = " + id + "\n" +
+                "WHERE purchase_date BETWEEN date '" + startDate + "' AND date '" + endDate + "'\n" +
+                "\tAND purchase_date = (SELECT working_day\n" +
+                "\t\tFROM working_calendar\n" +
+                "\t\tWHERE purchases.purchase_date = working_calendar.working_day) AND buyers.id = " + id + "\n" +
                 "GROUP BY products.name;";
     }
 }

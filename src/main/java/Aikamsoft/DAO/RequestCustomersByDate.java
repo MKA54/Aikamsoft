@@ -41,9 +41,9 @@ public class RequestCustomersByDate {
                 "INNER JOIN products\n" +
                 "ON purchases.products_id = products.id\n" +
                 "WHERE purchase_date BETWEEN date '" + startDate + "' AND date '" + endDate + "'\n" +
-                "\tAND purchase_date = (SELECT holiday\n" +
-                "\t\tFROM weekend_calendar\n" +
-                "\t\tWHERE purchases.purchase_date = weekend_calendar.holiday)\n" +
+                "\tAND purchase_date = (SELECT working_day\n" +
+                "\t\tFROM working_calendar\n" +
+                "\t\tWHERE purchases.purchase_date = working_calendar.working_day)\n" +
                 "GROUP BY buyers.id;";
     }
 }

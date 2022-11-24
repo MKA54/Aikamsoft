@@ -36,8 +36,8 @@ public class RequestWorkingDaysCount {
     }
 
     private String getCustomers() {
-        return "SELECT COUNT(holiday)\n" +
-                "FROM weekend_calendar\n" +
-                "WHERE holiday BETWEEN date '" + startDate + "' AND date '" + endDate + "';";
+        return "SELECT COUNT(working_day)\n" +
+                "FROM working_calendar\n" +
+                "WHERE working_day BETWEEN date '" + startDate + "' AND date '" + endDate + "';";
     }
 }
